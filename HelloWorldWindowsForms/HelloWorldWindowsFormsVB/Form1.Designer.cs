@@ -32,16 +32,17 @@
             this.boton1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.texto = new System.Windows.Forms.TextBox();
-            this.muestranombre = new System.Windows.Forms.Label();
             this.foto = new System.Windows.Forms.PictureBox();
-            this.ToPaTi = new System.Windows.Forms.Label();
             this.Apellidos = new System.Windows.Forms.Label();
             this.Apellido1 = new System.Windows.Forms.TextBox();
             this.Apellido2 = new System.Windows.Forms.TextBox();
             this.hombre = new System.Windows.Forms.RadioButton();
             this.mujer = new System.Windows.Forms.RadioButton();
             this.Sexo = new System.Windows.Forms.Label();
+            this.imagenHombres = new System.Windows.Forms.PictureBox();
+            this.textonombre = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.foto)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imagenHombres)).BeginInit();
             this.SuspendLayout();
             // 
             // boton1
@@ -71,33 +72,15 @@
             this.texto.Size = new System.Drawing.Size(100, 20);
             this.texto.TabIndex = 2;
             // 
-            // muestranombre
-            // 
-            this.muestranombre.AutoSize = true;
-            this.muestranombre.Location = new System.Drawing.Point(172, 139);
-            this.muestranombre.Name = "muestranombre";
-            this.muestranombre.Size = new System.Drawing.Size(0, 13);
-            this.muestranombre.TabIndex = 3;
-            // 
             // foto
             // 
             this.foto.Image = ((System.Drawing.Image)(resources.GetObject("foto.Image")));
-            this.foto.Location = new System.Drawing.Point(137, 64);
+            this.foto.Location = new System.Drawing.Point(137, 48);
             this.foto.Name = "foto";
             this.foto.Size = new System.Drawing.Size(190, 242);
             this.foto.TabIndex = 4;
             this.foto.TabStop = false;
             this.foto.Visible = false;
-            // 
-            // ToPaTi
-            // 
-            this.ToPaTi.AutoSize = true;
-            this.ToPaTi.Location = new System.Drawing.Point(204, 77);
-            this.ToPaTi.Name = "ToPaTi";
-            this.ToPaTi.Size = new System.Drawing.Size(19, 13);
-            this.ToPaTi.TabIndex = 5;
-            this.ToPaTi.Text = "eo";
-            this.ToPaTi.Visible = false;
             // 
             // Apellidos
             // 
@@ -132,7 +115,6 @@
             this.hombre.TabStop = true;
             this.hombre.Text = "Hombre";
             this.hombre.UseVisualStyleBackColor = true;
-            this.hombre.CheckedChanged += new System.EventHandler(this.hombre_CheckedChanged);
             // 
             // mujer
             // 
@@ -144,37 +126,55 @@
             this.mujer.TabStop = true;
             this.mujer.Text = "Mujer";
             this.mujer.UseVisualStyleBackColor = true;
-            this.mujer.CheckedChanged += new System.EventHandler(this.mujer_CheckedChanged);
             // 
             // Sexo
             // 
             this.Sexo.AutoSize = true;
             this.Sexo.Location = new System.Drawing.Point(31, 157);
             this.Sexo.Name = "Sexo";
-            this.Sexo.Size = new System.Drawing.Size(35, 13);
+            this.Sexo.Size = new System.Drawing.Size(31, 13);
             this.Sexo.TabIndex = 11;
-            this.Sexo.Text = "label3";
+            this.Sexo.Text = "Sexo";
+            // 
+            // imagenHombres
+            // 
+            this.imagenHombres.Image = ((System.Drawing.Image)(resources.GetObject("imagenHombres.Image")));
+            this.imagenHombres.Location = new System.Drawing.Point(137, 48);
+            this.imagenHombres.Name = "imagenHombres";
+            this.imagenHombres.Size = new System.Drawing.Size(190, 242);
+            this.imagenHombres.TabIndex = 12;
+            this.imagenHombres.TabStop = false;
+            this.imagenHombres.Visible = false;
+            // 
+            // textonombre
+            // 
+            this.textonombre.AutoSize = true;
+            this.textonombre.Location = new System.Drawing.Point(138, 48);
+            this.textonombre.Name = "textonombre";
+            this.textonombre.Size = new System.Drawing.Size(0, 13);
+            this.textonombre.TabIndex = 13;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(442, 318);
+            this.Controls.Add(this.textonombre);
+            this.Controls.Add(this.imagenHombres);
             this.Controls.Add(this.Sexo);
             this.Controls.Add(this.mujer);
             this.Controls.Add(this.hombre);
             this.Controls.Add(this.Apellido2);
             this.Controls.Add(this.Apellido1);
             this.Controls.Add(this.Apellidos);
-            this.Controls.Add(this.ToPaTi);
             this.Controls.Add(this.foto);
-            this.Controls.Add(this.muestranombre);
             this.Controls.Add(this.texto);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.boton1);
             this.Name = "Form1";
             this.Text = "Hello World C#";
             ((System.ComponentModel.ISupportInitialize)(this.foto)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imagenHombres)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -185,15 +185,15 @@
         private System.Windows.Forms.Button boton1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox texto;
-        private System.Windows.Forms.Label muestranombre;
         private System.Windows.Forms.PictureBox foto;
-        private System.Windows.Forms.Label ToPaTi;
         private System.Windows.Forms.Label Apellidos;
         private System.Windows.Forms.TextBox Apellido1;
         private System.Windows.Forms.TextBox Apellido2;
         private System.Windows.Forms.RadioButton hombre;
         private System.Windows.Forms.RadioButton mujer;
         private System.Windows.Forms.Label Sexo;
+        private System.Windows.Forms.PictureBox imagenHombres;
+        private System.Windows.Forms.Label textonombre;
     }
 }
 
